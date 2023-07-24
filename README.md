@@ -1,1 +1,3 @@
-# pats-painting
+# Patricks Painting Vermont
+
+## Under Construction 🎨
