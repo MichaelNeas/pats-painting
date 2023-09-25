@@ -2,7 +2,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background-color: #edfff238;
 }
 
 /* Styling for the header section */
@@ -29,17 +30,34 @@ header {
     margin-right: 10px;
 }
 
+#gallery-content {
+    height: 100px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
 /* Styling for the contact section */
 .contact {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
+    border-radius: 20px;
+    border: 2px solid #5D993D;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /* Styling for the footer section */
 footer {
-    background-color: #3b6126;
+    background-color: #5D993D;
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
