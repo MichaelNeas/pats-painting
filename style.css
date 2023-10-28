@@ -70,7 +70,21 @@ header h3 {
 }
 
 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li ul {
     list-style-type: circle;
+    padding-left: 20px;
 }
 
 /* Styling for the contact section */
