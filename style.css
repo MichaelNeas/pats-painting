@@ -87,14 +87,15 @@ header h3 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px); /* Fixed width for gallery items */
+    grid-template-columns: repeat(3, 200px);
     grid-gap: 10px;
     padding: 20px;
+    justify-content: center;
 }
 
 .gallery-item img {
     width: 100%; /* Ensure the image takes up 100% of the container width */
-    height: 200px; /* Fixed height for the gallery items */
+    height: 300px; /* Fixed height for the gallery items */
     object-fit: cover; /* Ensure the image covers the specified dimensions */
     border: 1px solid #ccc;
     border-radius: 5px;
