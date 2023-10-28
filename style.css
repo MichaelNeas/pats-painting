@@ -41,7 +41,7 @@ header h3 {
 }
 
 @media only screen and (max-width: 600px) {
-    #about-content p {
+    #about-content {
         width: 100% !important;
     }
   }
@@ -80,8 +80,19 @@ header h3 {
     }
 }
 
+#about-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
 #about-content p {
-    width: 70%;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
 }
 
 
