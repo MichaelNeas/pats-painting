@@ -44,29 +44,65 @@ header h3 {
     #about-content p {
         width: 100% !important;
     }
-
-    #services, #gallery {
-        width: 100% !important;
-    }
   }
+
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service {
+    flex: 0 0 calc(30% - 40px);
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex: 0 0 calc(45% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        flex: 0 0 calc(100% - 40px);
+    }
+}
 
 #about-content p {
     width: 70%;
 }
 
 
-#services {
-    width: 70%;
-    margin: 0 auto;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); /* Fixed width for gallery items */
+    grid-gap: 10px;
+    padding: 20px;
 }
 
-#gallery {
-    width: 70%;
-    margin: 0 auto;
+.gallery-item img {
+    width: 100%; /* Ensure the image takes up 100% of the container width */
+    height: 200px; /* Fixed height for the gallery items */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
-#gallery-content {
-    height: 100px;
+.gallery-item img:hover {
+    transform: scale(1.1);
 }
 
 ul {
