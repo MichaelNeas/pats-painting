@@ -44,6 +44,10 @@ header h3 {
     #about-content {
         width: 100% !important;
     }
+
+    .service {
+        flex: auto !important;
+    }
   }
 
 
@@ -55,7 +59,7 @@ header h3 {
 }
 
 .service {
-    flex: auto;
+    flex: 0 0 calc(30% - 40px);
     background-color: #ffffff;
     margin: 10px;
     padding: 15px;
