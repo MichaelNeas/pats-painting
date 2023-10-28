@@ -41,6 +41,10 @@ header h3 {
 }
 
 @media only screen and (max-width: 600px) {
+    #about-content {
+        width: 60% !important;
+    }
+    
     .service {
         flex: auto !important;
     }
