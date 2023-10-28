@@ -48,6 +48,10 @@ header h3 {
     .service {
         flex: auto !important;
     }
+
+    .gallery {
+        grid-template-columns: auto !important;
+    }
   }
 
 
@@ -77,17 +81,6 @@ header h3 {
     margin-top: 1em;
 }
 
-@media (max-width: 768px) {
-    .service {
-        flex: 0 0 calc(45% - 40px);
-    }
-}
-
-@media (max-width: 480px) {
-    .service {
-        flex: 0 0 calc(100% - 40px);
-    }
-}
 
 #about-content {
     width: 80%;
