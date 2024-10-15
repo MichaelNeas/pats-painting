@@ -75,9 +75,8 @@ header h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.service ul {
-    list-style-type: circle;
-    padding-left: 20px;
+.service:hover {
+    transform: scale(1.05);
 }
 
 #services-title {
