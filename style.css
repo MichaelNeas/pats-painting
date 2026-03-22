@@ -633,21 +633,27 @@ footer {
     #gallery {
         margin-left: -16px;
         margin-right: -16px;
-        padding: 3em 16px;
+        padding: 3em 0;
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4px;
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100%;
     }
 
     .gallery-img {
-        aspect-ratio: 4 / 3;
+        height: auto;
+        width: 100%;
     }
 
     .gallery-item img {
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: unset;
+    }
+
+    .gallery-item:not(:has(.gallery-caption)) {
+        margin-bottom: 1.5rem;
     }
 
     .gallery-caption {
