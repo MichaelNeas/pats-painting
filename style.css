@@ -641,6 +641,19 @@ footer {
         gap: 4px;
     }
 
+    .gallery-img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .gallery-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-caption {
+        display: block;
+    }
+
     .service-container {
         grid-template-columns: 1fr;
     }
